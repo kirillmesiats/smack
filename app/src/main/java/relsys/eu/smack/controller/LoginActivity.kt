@@ -1,9 +1,10 @@
-package relsys.eu.smack
+package relsys.eu.smack.controller
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import relsys.eu.smack.R
 
 class LoginActivity : AppCompatActivity() {
 

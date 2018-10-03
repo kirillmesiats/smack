@@ -1,10 +1,12 @@
-package relsys.eu.smack
+package relsys.eu.smack.controller
 
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_create_user.*
+import relsys.eu.smack.R
+import relsys.eu.smack.services.AuthService
 import java.util.*
 
 class CreateUserActivity : AppCompatActivity() {
@@ -33,7 +35,11 @@ class CreateUserActivity : AppCompatActivity() {
     }
 
     fun createUserClicked(view: View) {
+        AuthService.registerUser(this, "k@m.com", "123456") {complete ->
+            if (complete) {
 
+            }
+        }
     }
 
     fun generateColorClicked(view: View) {
