@@ -1,6 +1,7 @@
 package relsys.eu.smack.services
 
 import android.graphics.Color
+import relsys.eu.smack.controller.App
 import java.util.*
 
 object UserDataService {
@@ -36,9 +37,10 @@ object UserDataService {
         avatarName = ""
         email = ""
         name = ""
-        AuthService.authToken = ""
-        AuthService.userEmail = ""
-        AuthService.isLoggedIn = false
+        MessageService.channels.clear()
+        App.prefs.authToken = ""
+        App.prefs.userEmail = ""
+        App.prefs.isLoggedIn = false
     }
 
 }
