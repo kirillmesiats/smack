@@ -1,6 +1,5 @@
 package relsys.eu.smack.services
 
-import android.content.Context
 import android.util.Log
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
@@ -12,7 +11,7 @@ import relsys.eu.smack.utilities.URL_GET_CHANNELS
 object MessageService {
     val channels = ArrayList<Channel>()
 
-    fun getChannels(context: Context, complete: (Boolean) -> Unit) {
+    fun getChannels(complete: (Boolean) -> Unit) {
         val channelsRequest = object : JsonArrayRequest(Method.GET, URL_GET_CHANNELS, null, Response.Listener { response ->
             try {
                 for (x in 0 until response.length()) {
