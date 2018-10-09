@@ -6,10 +6,12 @@ import com.android.volley.toolbox.JsonArrayRequest
 import org.json.JSONException
 import relsys.eu.smack.controller.App
 import relsys.eu.smack.model.Channel
+import relsys.eu.smack.model.Message
 import relsys.eu.smack.utilities.URL_GET_CHANNELS
 
 object MessageService {
     val channels = ArrayList<Channel>()
+    val messages = ArrayList<Message>()
 
     fun getChannels(complete: (Boolean) -> Unit) {
         val channelsRequest = object : JsonArrayRequest(Method.GET, URL_GET_CHANNELS, null, Response.Listener { response ->
