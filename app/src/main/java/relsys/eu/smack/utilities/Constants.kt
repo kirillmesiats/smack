@@ -1,5 +1,7 @@
 package relsys.eu.smack.utilities
 
+//const val BASE_URL = "https://smackychatapp.herokuapp.com/v1/"
+//const val SOCKET_URL = "https://smackychatapp.herokuapp.com/"
 const val BASE_URL = "http://10.0.2.2:3005/v1/"
 const val SOCKET_URL = "http://10.0.2.2:3005/"
 const val URL_REGISTER = "${BASE_URL}account/register"
